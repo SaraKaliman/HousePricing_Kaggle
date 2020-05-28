@@ -13,15 +13,14 @@ The test results are made public in this Kaggle Notebook:  https://www.kaggle.co
 As the final model I use a weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression.
 
 With very simple feature engineering this approach scores 0.1247 on test set (HousePrices_Comparing_Models_SIMPLE_FEATURE_SELECTION.ipynb)
-
-NOTE: I have found that log transform of the continuous features and prices improved results much more than for example PowerTransform. 
+<p>NOTE: I have found that log transform of the continuous features and prices improved results much more than for example PowerTransform. </p>
 
 Upon complex feature engineering the score was 0.11596. (HousePrices_Comparing_Models.ipynb)
 
 Furthermore, a Deep Learning Model approach is tested. (HousePrices_Comparing_Models_plus_DL_Model.ipynb)
 
 
-SHORT CONCLUSION:
+<h3>SHORT CONCLUSION:</h3>
 
 The best results were obtained with weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression which were all quick to optimize. Complex feature engineering improved significantly the results.
 Deep Learning models took long time to optimize and train and the final result was no better than the standard ML models (for this data set). Still, for DL approach I would recommend relatively deep network with several layers and regularization (I have used both Dropout and kernel L2 regularization) and using 'sigmoid' activation function on the output layer together with binary_crossentropy loss function (MinMaxScaler on the Prices before).
