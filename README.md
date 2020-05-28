@@ -10,7 +10,7 @@ The test results are made public in this Kaggle Notebook:  https://www.kaggle.co
 
 As the final model I use a weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression.
 
-With very simple feature engineering this approach scores 0.1247 on test set (HousePrices_Comparing_Models_SIMPLE_FEATURE_SEL.ipynb)
+With very simple feature engineering this approach scores 0.1247 on test set (HousePrices_Comparing_Models_SIMPLE_FEATURE_SELECTION.ipynb)
 
 Upon complex feature engineering the score was 0.11596. (HousePrices_Comparing_Models.ipynb)
 
