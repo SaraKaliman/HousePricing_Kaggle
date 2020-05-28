@@ -10,14 +10,14 @@ The final score is calculated as root mean logarithmic error on the Test results
 The test results are made public in this Kaggle Notebook:  https://www.kaggle.com/moradnejad/perfect-score-for-evaluation-purposes
 
 
-As the final model I use a weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression.
+As the final model I use a weight combination of <b> Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression </b>.
 
-With very simple feature engineering this approach scores 0.1247 on test set (HousePrices_Comparing_Models_SIMPLE_FEATURE_SELECTION.ipynb)
+ - With very <b>simple feature engineering</b> this approach scores <b>0.1247</b> on test set (<i>HousePrices_Comparing_Models_SIMPLE_FEATURE_SELECTION.ipynb</i>)
 <p>NOTE: I have found that log transform of the continuous features and prices improved results much more than for example PowerTransform. </p>
 
-Upon complex feature engineering the score was 0.11596. (HousePrices_Comparing_Models.ipynb)
+ -Upon <b>complex feature engineering</b> the score was <b>0.11596</b>. (<i>HousePrices_Comparing_Models.ipynb</i>)
 
-Furthermore, a Deep Learning Model approach is tested. (HousePrices_Comparing_Models_plus_DL_Model.ipynb)
+ - Furthermore, a <b>Deep Learning Model approach</b> is tested. (<i>HousePrices_Comparing_Models_plus_DL_Model.ipynb</i>)
 
 
 <h3>SHORT CONCLUSION:</h3>
@@ -25,5 +25,6 @@ Furthermore, a Deep Learning Model approach is tested. (HousePrices_Comparing_Mo
 The best results were obtained with weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression which were all quick to optimize. Complex feature engineering improved significantly the results.
 Deep Learning models took long time to optimize and train and the final result was no better than the standard ML models (for this data set). Still, for DL approach I would recommend relatively deep network with several layers and regularization (I have used both Dropout and kernel L2 regularization) and using 'sigmoid' activation function on the output layer together with binary_crossentropy loss function (MinMaxScaler on the Prices before).
 
+<h3 style="background-color:Tomato;">Hope you will find these Notebooks useful!</h3>
 
-Hope you will find these Notebooks useful!
+
