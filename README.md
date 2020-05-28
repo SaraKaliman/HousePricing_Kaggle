@@ -23,7 +23,7 @@ Furthermore, a Deep Learning Model approach is tested. (HousePrices_Comparing_Mo
 SHORT CONCLUSION:
 
 The best results were obtained with weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression which were all quick to optimize. Complex feature engineering improved significantly the results.
-Deep Learning models took long time to optimize and train and the final result was no better than the standard ML models (for this data set). Still, for DL approach I would recommend relatively deep network with several layers and regularization (I have use Dropout and kernel L2 regularization) and also 'sigmoid' output function with binary_crossentropy loss function (MinMaxScaler on the Prices before).
+Deep Learning models took long time to optimize and train and the final result was no better than the standard ML models (for this data set). Still, for DL approach I would recommend relatively deep network with several layers and regularization (I have used both Dropout and kernel L2 regularization) and using 'sigmoid' activation function on the output layer together with binary_crossentropy loss function (MinMaxScaler on the Prices before).
 
 
 Hope you will find these Notebooks useful!
