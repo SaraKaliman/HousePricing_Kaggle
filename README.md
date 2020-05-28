@@ -15,7 +15,7 @@ As the final model I use a weight combination of <b> Ridge Linear Regression, Gr
  - With very <b>simple feature engineering</b> this approach scores <b>0.1247</b> on test set (<i>HousePrices_Comparing_Models_SIMPLE_FEATURE_SELECTION.ipynb</i>)
 <p>NOTE: I have found that log transform of the continuous features and prices improved results much more than for example PowerTransform. </p>
 
- -Upon <b>complex feature engineering</b> the score was <b>0.11596</b>. (<i>HousePrices_Comparing_Models.ipynb</i>)
+ - Upon <b>complex feature engineering</b> the score was <b>0.11596</b>. (<i>HousePrices_Comparing_Models.ipynb</i>)
 
  - Furthermore, a <b>Deep Learning Model approach</b> is tested. (<i>HousePrices_Comparing_Models_plus_DL_Model.ipynb</i>)
 
@@ -25,6 +25,6 @@ As the final model I use a weight combination of <b> Ridge Linear Regression, Gr
 The best results were obtained with weight combination of Ridge Linear Regression, Gradient Boost Regression and Support Vector Regression which were all quick to optimize. Complex feature engineering improved significantly the results.
 Deep Learning models took long time to optimize and train and the final result was no better than the standard ML models (for this data set). Still, for DL approach I would recommend relatively deep network with several layers and regularization (I have used both Dropout and kernel L2 regularization) and using 'sigmoid' activation function on the output layer together with binary_crossentropy loss function (MinMaxScaler on the Prices before).
 
-<h3 style="background-color:Tomato;">Hope you will find these Notebooks useful!</h3>
+<h3><i>Hope you will find these Notebooks useful!</i></h3>
 
 
